@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT</title>
+</head>
+<body>
+Sample Screnn <br>
+<input type="text" id="text">
+<button type="button" id="add" value="add." onclick="addarry()">Add</button>
+<button type="button" id="display" value="display." onclick="displayarry()">Display</button>
+<p id="result"></p>
+<script>
+    let x = 0
+    let array = []
+    function addarry(){
+  array[x] = document.getElementById("text").value
+    alert("Element  " + array[x] + "    add   " + x++) ;
+        document.getElementById("text").value + " ";
+    }
+    function displayarry(){
+        let e = "<hr/>"
+        for (let i = 0 ; i < array.length; i++){
+            e += "Element" + i + "=" + array[i] + "<br/>";
+    }
+    document.getElementById("result").innerHTML = e;
+    }
+</script>
+
+
+
+
+
+</body>
+</html>
