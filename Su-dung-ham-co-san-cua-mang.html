@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT</title>
+</head>
+<body>
+<script>
+
+    /*   Bài 1
+
+      let red = ['Red']
+       let green = ['Green']
+       let white = ['White']
+       let black = ['Black']
+       let news = [red, green, white, black]
+       document.write(news.join(" , "))
+*/
+
+
+    /*    Bài 2
+       let number = window.prompt("nhap so")
+       let mang = number.toString()
+       let result = [mang[0]]
+       for (i=1; i< mang.length; i++){
+           if (mang[i]%2===0 && mang[i-1]%2===0){
+               result.push('-',mang[i])
+           }else {
+               result.push(mang[i])
+           }
+       }
+       document.write(result.join(""))
+   */
+
+    //  Bai 3
+
+    let mang = prompt('nhập chữ cần chuyển đổi')
+    let bigfont = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    let smallfont = 'abcdefghijklmnopqrstuvwxyz'
+    let result = []
+    for (i = 0; i <mang.length ; i++) {
+        if (bigfont.indexOf(mang[i])!== -1){
+            result.push(mang[i].toLowerCase())
+        }else if (smallfont.indexOf(mang[i])!== -1){
+            result.push(mang[i].toUpperCase())
+        }
+        else {
+            result.push(mang[i])
+        }
+    }
+    document.write(result.join(' '))
+
+</script>
+</body>
+</html>
