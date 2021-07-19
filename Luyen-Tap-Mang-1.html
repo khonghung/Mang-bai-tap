@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LT mang 1</title>
+</head>
+<body>
+<p id="item1"></p>
+<p id="item2"></p>
+<script>
+    /* Bài 1
+    let mang = [23, 4, 6, 40, 53, -2, 10, -5, 74, 22];
+    for (i=0 ; i< mang.length ;i++){
+        if (mang[i]>= 10 ){
+            document.write(mang[i] + " ")
+        }
+    }
+*/
+
+    /*    Bài 2
+        let max = [0]
+        let mang = [23, 4, 6, 40, 53, -2, 10, -5, 74, 22];
+        for (i = 0; i < mang.length; i++){
+            if (mang[i] > max) {
+                max = mang[i]
+
+            }
+        }
+        alert("số lớn nhất" + max + "vị trí" + i)
+    */
+
+    /*     Bài 3
+       let total = 0
+       let max = [0]
+       let mang = [ 3, 10, 43,-2, 5];
+       for (i = 0; i < mang.length; i++){
+           if (mang[i] > max) {
+               max = mang[i]
+        total = (3+10+43+(-2)+5) /5
+           }
+       }
+       alert("số lớn nhất" + max )
+       document.write("trung bình cộng = "+ total )
+
+     */
+
+
+    /* Bài 4
+
+    let mang = [ 3, 10, 43,-2, 5];
+      mang.reverse()
+    console.log(mang)
+     */
+
+    /*     Bài 5
+    let mangso = [], mangsoam = []
+
+    for (let i = 0; i < 5; i++) {
+        mangso[i] = Number(prompt("Nhập số vào mảng"))
+        if (mangso[i]<0){
+            mangsoam.push(mangso[i])
+        }
+    }
+    document.write("mangso = ["+mangso+"]<br>")
+    document.write("Mảng các số âm gồm "+mangsoam.length +" phần tử mangsoam = ["+mangsoam+"]<br>")
+*/
+
+
+    /* Bài 6
+    let mangsonguyen = [4, -6, 23, -43, 3, 10, 66, 9, 7, 50]
+    let mangv = []
+    for (i=0 ; i<mangsonguyen.length; i++){
+        mangv[i] = parseInt(prompt("nhập số cần tìm trong mảng số nguyên"))
+        if ( mangv[i] === mangsonguyen[i]){
+            alert("V is in the array")
+            break;
+        } else {
+            alert("V is not in the array")
+            break;
+        }
+    }
+  */
+
+    /* Bài 7
+
+    let mangsonguyen = [4, -6, 23, -43, 3, 10, 66, 9, 7, 50]
+    let mangv = 0
+    mangv = parseInt(prompt("nhập số cần tìm trong mảng số nguyên"));
+    for (let i=0 ; i<mangsonguyen.length; i++){
+        if ( mangv === mangsonguyen[i]) {
+            for (let j = i; j < mangsonguyen.length; j++) {
+                mangsonguyen[j] = mangsonguyen[j+1];
+            }
+            mangsonguyen[mangsonguyen.length -1] = 0;
+            break;
+        }
+    }
+console.log(mangsonguyen)
+*/
+
+    /*       Bài 8
+
+    let mangsonguyen = [4, -6, 23, -43, 3, 10, 66, 9, 7, 50]
+    document.getElementById("item1").innerHTML = mangsonguyen
+          mangsonguyen.sort(function (a,b){ return a-b});
+    document.getElementById("item2").innerHTML = mangsonguyen
+*/
+
+
+      /* Bài 9
+    let total = 0
+    let mang1 = [ 3, 10, 43,-2, 5];
+    let mang2 = [ 56, 4, 22, 9, 11];
+      total =  '['+ mang1 + "," + mang2+']'
+    document.write("kết quả = " + total )
+
+       */
+</script>
+</body>
+</html>
