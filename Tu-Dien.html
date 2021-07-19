@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ Điển </title>
+
+    <title>Từ Điển </title>
+</head>
+<body>
+<input type="text" id="tienganh">
+<input type="button" value="dich" onclick="dich()"> <br>
+
+<script>
+    let tienganh = document.getElementById("tienganh")
+    let mangTA = ["you", "i", "am", "fine", "thanks"]
+    let mangTV = ["bạn", "tôi", "là", "khỏe", "cảm ơn"]
+    document.write("Chỉ có thể dịch được các từ [" + mangTA.join(" , ") + "]")
+
+    function dich() {
+        let check = false
+        for (let i = 0; i < mangTA.length; i++) {
+            if (mangTA[i] === tienganh.value) {
+                check = true
+                alert(mangTV[i])
+                break;
+            }
+        }
+        if (check === false) {
+            alert("không tìm thấy")
+        }
+    }
+
+</script>
+</body>
+</html>
